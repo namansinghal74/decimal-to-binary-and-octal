@@ -1,0 +1,61 @@
+<html>
+<title>Conversion of Decimal Numbers to Binary and Octal</title>
+<head></head>
+<body background="p4.jpg">
+<center>
+<b>
+<p style="font-size:55;color:yellow;">Conversion of Decimal Number to Binary and Octal</h1>
+<br><br>
+<button type="button" onclick="project3()"><i><b>Click to know your Browser and Operating System</b></i></button>
+<p style="color:pink;font-size:20;"id="project3"></p>
+<br>
+<h2 style="color:violet;"><b><i><u>CONVERSION OF DECIMAL NUMBERS</u></i></b></h2>
+<form>
+<h3 style="color:orange;">First number :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="number" id="fno" placeholder="Enter an Integer"><br>
+<h3 style="color:orange;">Second number :&nbsp;<input type="number" id="lno" placeholder="Enter an Integer"><br><br></h4>
+<button type="button" onclick="project1()"><i><b>Click to convert 1st number to Binary and Octal</b></i></button><br>
+<p id="soln"></p>
+<button type="button" onclick="project2()"><i><b>Click to convert 2nd number to Binary and Octal</b></i></button><br>
+<p id="soln1"></p>
+</form>
+</center>
+
+<p align="right"><br><br><br><br>
+<button type="submit">
+<a href="gp_info.html"><i><b>Click here for Group info.</b></i></a></button>
+</p>
+<script>
+ function project1()
+  {
+	var x = document.getElementById("fno").value;
+ 
+	x = parseInt(x);
+	var binary = x.toString(2);
+	var octal = x.toString(8);
+	var soln = "The binary representation of " + x + " is " + binary + "<br>";
+	soln += "The octal representation of " + x + " is " + octal + "<br>";
+	document.getElementById("soln").innerHTML = soln;
+  }
+function project2()
+  {
+	var x = document.getElementById("lno").value;
+ 
+	x = parseInt(x);
+	var binary = x.toString(2);
+	var octal = x.toString(8);
+	var soln = "The binary representation of " + x + " is " + binary + "<br>";
+	soln += "The octal representation of " + x + " is " + octal + "<br>";
+	document.getElementById("soln1").innerHTML = soln;
+  }
+ function project3()
+  {
+	document.getElementById("project3").innerHTML = navigator.userAgent;
+  }
+
+</script>
+
+</b>
+
+</body>
+</html>
+
